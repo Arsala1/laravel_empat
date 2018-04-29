@@ -25,3 +25,7 @@ Route::prefix('mahasiswa')->group(function () {
 	Route::post('/update', 'MahasiswaController@update');
 
 });
+
+Route::prefix('admin')->group(function () {
+	Route::view('app', 'admin.layouts.app');
+});
